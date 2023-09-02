@@ -1,0 +1,62 @@
+﻿@model MVS.Models.Users
+@{
+    ViewData["Title"] = "SignUp";
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Signup User
+
+                </h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Signup" asp-controller="Account" method="post">
+                   
+                    
+                    <div class="form-group">
+
+                        <label asp-for="UserName">
+
+                        </label>
+                        <input asp-for="UserName" class="form-control" />
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Mobile">   </label>
+                         <input asp-for="Mobile" class="form-control" />
+                   </div>
+
+                    <div class="form-group">
+                      <label asp-for="Password">
+
+                        </label>
+                        <input type="password" asp-for="Password" class="form-control" />
+
+                    </div>
+                     <div class="form-group">
+
+                        <label asp-for="ConfirmPassword"> </label>
+                        <input type="password" asp-for="ConfirmPassword" class="form-control" />
+                          </div>
+
+                    <div class="form-group mt-3">
+
+                        <input type="submit" class="btn btn-info" value="Register" />
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
